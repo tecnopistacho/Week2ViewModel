@@ -100,7 +100,7 @@ fun removeTask(list: List<Task>, id: Int): List<Task> {
 
 ---
 
-## Compose State Managemen
+## Compose State Management
 
 Let's start by explaining what is State. State is any value that can change over time in an application, like a number, text, or a boolean. In Compose, state determines what the UI displays. 
 When state changes, Compose automatically updates the UI to reflect the new state. This process is called recomposition.
