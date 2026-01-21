@@ -105,12 +105,12 @@ fun removeTask(list: List<Task>, id: Int): List<Task> {
 Let's start by explaining what is State. State is any value that can change over time in an application, like a number, text, or a boolean. In Compose, state determines what the UI displays. 
 When state changes, Compose automatically updates the UI to reflect the new state. This process is called recomposition.
  
-**remember** is used to keep the state value across UI redraws so it doesn’t reset. 
-**ViewModel** is usually used for larger state. It works with configuration changes (e.g. screen rotation) and separates UI logic from business logic. 
+`remember` is used to keep the state value across UI redraws so it doesn’t reset. 
+**ViewModel** is usually used for larger state. It works with configuration changes (e.g. screen rotation) and separates UI logic from business logic, making the code more organized, maintainable, and reusable.. 
 
 Instead of updating UI elements, you only change the state, and Compose updates the UI for you.
 
 ### Why ViewModel is better than just using remember?
 
-To keep data safe, it is better to use a **ViewModel**. For example, if the user rotates their device, navigates between screens, changes the screen size, or uses multi-window mode, using only `remember` would cause the state and data to be lost. In contrast, a ViewModel preserves state across these configuration changes, keeping the data safe. Another advantage is that it separates UI logic from business logic, making the code more organized, maintainable, and reusable.
+To keep data safe, it is better to use a **ViewModel**. For example, if the user rotates their device, navigates between screens, changes the screen size, or uses multi-window mode, using only `remember` would cause the state and data to be lost. In contrast, a ViewModel preserves state across these configuration changes, keeping the data safe.
 
