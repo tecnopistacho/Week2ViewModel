@@ -114,3 +114,9 @@ Instead of updating UI elements, you only change the state, and Compose updates 
 
 To keep data safe, it is better to use a **ViewModel**. For example, if the user rotates their device, navigates between screens, changes the screen size, or uses multi-window mode, using only `remember` would cause the state and data to be lost. In contrast, a ViewModel preserves state across these configuration changes, keeping the data safe.
 
+---
+
+## Video Presentation
+
+[Week 2 - ViewModel](https://www.youtube.com/watch?v=pDXYLSF4_Lg)
+
